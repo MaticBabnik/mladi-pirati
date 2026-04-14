@@ -87,27 +87,27 @@ export const aboutContent = {
 export const programContent = {
   title: "Naš program",
   subtitle:
-    "Teme, ki jih odpiramo, so prakticne: od zasebnosti in znanja do dostojnega zivljenja mladih.",
+    "Teme, ki jih odpiramo, so praktične: od zasebnosti in znanja do dostojnega življenja mladih.",
   items: [
     {
       title: "Digitalne pravice",
       description:
-        "Branimo zasebnost, svoboden internet in tehnologijo, ki ljudi opolnomoci namesto nadzira.",
+        "Branimo zasebnost, svoboden internet in tehnologijo, ki ljudi opolnomoči namesto nadzira.",
     },
     {
-      title: "Transparentna drzava",
+      title: "Transparentna država",
       description:
-        "Zelimo odlocanje, ki je preverljivo, razumljivo in odprto za javnost, ne samo za insajderje.",
+        "Želimo odločanje, ki je preverljivo, razumljivo in odprto za javnost, ne samo za insajderje.",
     },
     {
       title: "Dostopno znanje",
       description:
-        "Podpiramo odprto znanje, kakovostno javno izobrazevanje in pogoje, v katerih se lahko mladi razvijajo.",
+        "Podpiramo odprto znanje, kakovostno javno izobraževanje in pogoje, v katerih se lahko mladi razvijajo.",
     },
     {
       title: "Prihodnost mladih",
       description:
-        "Stanovanja, delo, mobilnost in kakovostno zivljenje niso luksuz, ampak osnova za samostojno prihodnost.",
+        "Stanovanja, delo, mobilnost in kakovostno življenje niso luksuz, ampak osnova za samostojno prihodnost.",
     },
   ] satisfies ProgramItem[],
 } as const;
