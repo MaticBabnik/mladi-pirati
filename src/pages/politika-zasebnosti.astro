@@ -1,0 +1,104 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import { siteMetadata } from "../config/site";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Politika zasebnosti"
+  description="Kratka politika zasebnosti za spletno stran Mladih Piratov in pristopni obrazec."
+  canonicalPath="/politika-zasebnosti"
+>
+  <main class="join-page legal-page" id="main-content">
+    <header class="join-topbar">
+      <a class="join-brand" href="/">
+        <img
+          src="/logos/Pirati_MladiPirati_Logo_3.png"
+          alt={siteMetadata.shortName}
+          width="44"
+          height="44"
+        />
+        <span class="join-brand-copy">
+          <span class="join-brand-name">{siteMetadata.shortName}</span>
+          <span class="join-brand-tagline">Podmladek Piratske stranke Slovenije</span>
+        </span>
+      </a>
+
+      <a class="join-secondary-link" href="/">
+        ← Nazaj na prvo stran
+      </a>
+    </header>
+
+    <section class="legal-page-shell">
+      <article class="legal-panel">
+        <p class="join-kicker">Pravno</p>
+        <h1 class="join-page-title">Politika zasebnosti</h1>
+        <p class="legal-lead">
+          Ta stran je namenjena osnovni predstavitvi Mladih Piratov in oddaji
+          pristopnega obrazca. Zasebnost obiskovalk in obiskovalcev jemljemo
+          resno, zato tukaj na kratko pojasnjujemo, katere podatke lahko
+          obdelujemo in zakaj.
+        </p>
+
+        <section class="legal-section" aria-labelledby="kaj-zbiramo">
+          <h2 id="kaj-zbiramo">Kaj ta stran zbira</h2>
+          <p>
+            Ob navadnem obisku strani praviloma ne zbiramo osebnih podatkov, s
+            katerimi bi te lahko neposredno identificirali. Osebne podatke
+            prejmemo predvsem takrat, ko jih prostovoljno vneseš in oddaš prek
+            pristopnega obrazca.
+          </p>
+        </section>
+
+        <section class="legal-section" aria-labelledby="pristopni-obrazec">
+          <h2 id="pristopni-obrazec">Pristopni obrazec</h2>
+          <p>
+            Podatke, ki jih vneseš v pristopni obrazec, uporabljamo za pregled
+            in obravnavo prošnje za članstvo, preverjanje pogojev za članstvo ter
+            komunikacijo, ki je neposredno povezana s tem postopkom.
+          </p>
+          <p>
+            Ti podatki niso namenjeni splošnemu trženju, temveč izključno
+            postopku obravnave članstva in osnovnemu vodenju komunikacije glede
+            prijave.
+          </p>
+        </section>
+
+        <section class="legal-section" aria-labelledby="osnovna-analitika">
+          <h2 id="osnovna-analitika">Osnovna analitika</h2>
+          <p>
+            Za razumevanje osnovnega obiska strani lahko uporabljamo lastno instanco Matomo - preprosto,
+            samogostovano analitiko, gostovano v EU. Namen analitike je omejen na osnovno
+            agregatno statistiko, kot so število obiskov, najbolj obiskane
+            strani ali tehnična uspešnost spletnega mesta.
+          </p>
+        </section>
+
+        <section class="legal-section" aria-labelledby="brez-profiliranja">
+          <h2 id="brez-profiliranja">Brez oglaševalskega profiliranja</h2>
+          <p>
+            Morebitna osnovna analitika ni namenjena oglaševalskemu profiliranju,
+            prodaji podatkov ali sledenju za potrebe ciljanja oglasov. Zanima
+            nas predvsem, ali stran deluje, katere vsebine ljudi najbolj
+            zanimajo in kako jo lahko izboljšamo.
+          </p>
+        </section>
+
+        <section class="legal-section" aria-labelledby="posredovanje-podatkov">
+          <h2 id="posredovanje-podatkov">Posredovanje podatkov</h2>
+          <p>
+            Osebnih podatkov ne posredujemo tretjim osebam za nobene namene.
+          </p>
+        </section>
+
+        <p class="legal-meta">
+          Če bomo to politiko bistveno posodobili, bo nova različica objavljena
+          na tej strani. Za uradne informacije se lahko vedno obrneš na
+          komunikacijske kanale Mladih Piratov.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <SiteFooter />
+</BaseLayout>

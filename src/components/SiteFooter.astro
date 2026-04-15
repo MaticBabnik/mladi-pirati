@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import { footerLinks, siteMetadata, socialLinks } from "../config/site";
 ---
 
@@ -25,9 +26,21 @@ import { footerLinks, siteMetadata, socialLinks } from "../config/site";
 
       {
         socialLinks.length > 0 && (
-          <div class="footer-socials">
-            {socialLinks.map((link) => <a href={link.href}>{link.label}</a>)}
-          </div>
+          <ul aria-label="Družbena omrežja" class="footer-socials">
+            {socialLinks.map((link) => (
+              <li>
+                <a
+                  aria-label={link.label}
+                  href={link.href}
+                  rel="noreferrer"
+                  target="_blank"
+                  title={link.label}
+                >
+                  <Icon aria-hidden="true" class="footer-social-icon" name={link.icon} />
+                </a>
+              </li>
+            ))}
+          </ul>
         )
       }
     </div>

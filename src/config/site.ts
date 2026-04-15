@@ -14,9 +14,12 @@ export interface FooterLink {
   label: string;
 }
 
+export type SocialIconName = `simple-icons:${string}`;
+
 export interface SocialLink {
-  href: string;
+  href: `https://${string}`;
   label: string;
+  icon: SocialIconName;
 }
 
 const fallbackSiteUrl = "https://mladipirati.si";
@@ -26,6 +29,11 @@ const indexingEnabled = import.meta.env.ALLOW_INDEXING === "true";
 
 export const blockedRobotsPolicy =
   "noindex, nofollow, noarchive, nosnippet, noimageindex";
+
+export const DISCORD_URL = "https://discord.gg/jqS7QFpc2C";
+export const INSTAGRAM_URL = "https://www.instagram.com/mladipiratisi/";
+export const TIKTOK_URL = "https://www.tiktok.com/@mladipirati";
+export const GITHUB_URL = "https://github.com/mladi-pirati";
 
 export const siteMetadata = {
   name: "Mladi Pirati",
@@ -113,6 +121,32 @@ export const programContent = {
   ] satisfies ProgramItem[],
 } as const;
 
-export const footerLinks: FooterLink[] = [];
+export const footerLinks: FooterLink[] = [
+  {
+    href: "/politika-zasebnosti",
+    label: "Politika zasebnosti",
+  },
+];
 
-export const socialLinks: SocialLink[] = [];
+export const socialLinks: SocialLink[] = [
+  {
+    href: DISCORD_URL,
+    label: "Discord",
+    icon: "simple-icons:discord",
+  },
+  {
+    href: INSTAGRAM_URL,
+    label: "Instagram",
+    icon: "simple-icons:instagram",
+  },
+  {
+    href: TIKTOK_URL,
+    label: "TikTok",
+    icon: "simple-icons:tiktok",
+  },
+  {
+    href: GITHUB_URL,
+    label: "GitHub",
+    icon: "simple-icons:github",
+  },
+];

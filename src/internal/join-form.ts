@@ -3,7 +3,6 @@ export const JOIN_REQUEST_API_PATH = "/api/join-request";
 
 export const STATUTE_URL = "https://next.piratskastranka.si/s/bcpkRR2PrjcYpDs";
 export const PROGRAM_URL = "https://wiki.piratskastranka.si/wiki/Glavna_stran";
-export const DISCORD_URL = "https://discord.gg/jqS7QFpc2C";
 
 export const MIN_JOIN_AGE = 15;
 export const MAX_JOIN_AGE = 32;
